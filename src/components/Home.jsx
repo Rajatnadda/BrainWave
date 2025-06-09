@@ -8,7 +8,6 @@ import Pricing from "./Pricing";
 import Roadmap from "./RoadMap";
 import ButtonGradient from "../assets/svg/ButtonGradient";
 import Footer1 from "./Foooter/Footer1";
-import Footer from "./Foooter/Footer";
 
 const Home = () => {
   return (
@@ -21,7 +20,6 @@ const Home = () => {
         <Services />
         <Pricing />
         <Roadmap />
-        <Footer />
         <Footer1 />
       </div>
       <ButtonGradient />

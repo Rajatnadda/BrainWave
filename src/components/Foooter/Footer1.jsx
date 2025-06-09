@@ -30,19 +30,19 @@ const Footer1 = () => {
   ];
 
   return (
-    <div className="min-h-max bg-black px-20 ">
-      <div className="flex  items-center justify-center gap-15 p-10">
+    <div className="min-h-max bg-black px-4 md:px-10  lg:px-20 text-white">
+      <div className="flex flex-wrap   items-center justify-center gap-6 py-6">
         {Logos.map((Icon, index) => (
           <Icon key={index} size={24} className="cursor-pointer" />
         ))}
       </div>
-      <div className="flex items-center justify-center gap-1 mt-2">
+      <div className="flex flex-col items-center justify-center gap-2 mt-2 text-sm text-center sm:flex-row">
         <p>
           ⭐⭐⭐⭐⭐ <span>4.4 rating | 2,64,326 reviews</span>
           <span>⭐ Trustpilot</span>
         </p>
       </div>
-      <div className="grid grid-cols-4 gap-12  mt-10 mb-8">
+      <div className="grid grid-cols-2 sm:grid-cols-3  lg:grid-cols-4 gap-6  mt-10 mb-8 text-sm">
         {Text.map((Text, i) => (
           <div key={i} className="cursor-pointer ">
             {Text}
@@ -50,20 +50,20 @@ const Footer1 = () => {
         ))}
       </div>
       <hr />
-      <div className="flex justify-between mt-10">
-        <div className="flex flex-row gap-4 justify-center  ">
-          <div className="border-2 cursor-pointer flex items-center justify-center w-40">
+      <div className="flex  flex-col  lg:flex-row justify-between gap-6 mt-10 mb-10 ">
+        <div className="flex flex-col sm:flex-row  gap-4 items-center justify-center  ">
+          <div className="border cursor-pointer flex items-center justify-center w-40  rounded-md">
             <a>
               <img src="https://cache.vtrcdn.com/orion/images/buttons/google-play-store/en/get-on-google-play.svg" />
             </a>
           </div>
-          <div className="border-2 cursor-pointer  flex items-center justify-center w-40 ">
+          <div className="border cursor-pointer  flex items-center justify-center w-40 p-2 rounded-md">
             <a>
               <img src="https://cache.vtrcdn.com/orion/images/buttons/apple-app-store/en/download-on-app-store.svg" />
             </a>
           </div>
         </div>
-        <div className="flex gap-4 items-center">
+        <div className="flex flex-col sm:flex-row gap-4 items-center text-center sm:text-left">
           <p className="flex gap-0.5 items-center">
             <FaRegCopyright />
             <span> 1997-2025Viator,Inc.</span>
