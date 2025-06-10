@@ -6,7 +6,6 @@ import { LuInstagram } from "react-icons/lu";
 import { IoLogoYoutube } from "react-icons/io5";
 import { FaTiktok } from "react-icons/fa";
 import { FaRegCopyright } from "react-icons/fa";
-
 const Footer1 = () => {
   const Logos = [
     FaFacebookF,
